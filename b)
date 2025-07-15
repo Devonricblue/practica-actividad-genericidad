@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class EjercicioB{
+    public static void main(String[]args){
+          ArrayList<String> listaNombres = new ArrayList<>();
+          listaNombres.add("Luis");
+          listaNombres.add("Ana");
+          listaNombres.add("Maria");
+
+          for (String nombre : listaNombres){
+              System.out.println(nombre);
+          }
+    }
+}
