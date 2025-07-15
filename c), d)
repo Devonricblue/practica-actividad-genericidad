@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+classs Persona{
+    String nombre;
+    int edad;
+    String ci;
+
+    public Persona(String nombre, int edad, String ci){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.ci = ci;
+    }
+    public String toString(){
+        return nombre + "| edad:" + edad + " | CI: " + ci;
+    }
+}
+
+Public class EjercicioC{
+        public static void main(String[] args{
+          ArrayList<Persona> personas = new ArrayList<>();
+          persona.add(new Persona("Ana", 20, "4856233"));
+          persona.add(new Persona("Luis", 25, "4856233"));
+          persona.add(new Persona("Maria", 22, "4855893"));
+
+          HashMap<String, Integer> ciRepetidos = HasMap<>();
+
+          for (Persona p : personas) {
+              if (ciRepetidos.containKey(p.ci)){
+                  int count = ciRepetidos.get(p.ci) + 1;
+                  char letra = (char) ('A' + count);
+                  p.ci = p.ci + "-" + letra;
+                  ciRepetidos.put(p.ci.substring(0,7), count);
+                  } else{
+                        ciRepetidos.put(p.ci, 0);
+                  }
+          }
+          for (Persona  p : personas){
+                System.out.printlm(p);
+          }
+        }
+
+}
