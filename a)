@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class EjercicioA{
+      public static void main(String[]args) {
+          ArrayList<Integer>
+listaEnteros = new ArrayList<>();
+      listaEnteros.add(5);
+      listaEnteros.add(10);
+      listaEnteros.add(15);
+      for (Integer numero : listaEnteros) {
+          System.out.println(numero);
+          }
+      }
+}
